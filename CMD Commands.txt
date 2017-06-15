@@ -1,0 +1,13 @@
+C:\Program Files\Oracle\VirtualBox
+VBoxManage natnetwork add --netname natnet1 --network "192.168.15.0/24" --enable --dhcp on
+
+Change IP
+
+sudo ifconfig eth0 192.168.0.1 netmask 255.255.255.0
+
+Change FORWARD
+
+sudo -s
+sudo gedit /etc/sysctl.conf
+
+#net.ipv4.ip_forward=1
